@@ -11,17 +11,10 @@ files:
 
 permissions:
   - object: /var/www/html
+    pattern: "**"
     owner: nginx
     group: nginx
     mode: 755
-    pattern: "**"
-    type: "directory"
-  - object: /var/www/html
-    owner: nginx
-    group: nginx
-    mode: 644
-    pattern: "**"
-    type: "file"
 
 hooks:
   BeforeInstall:
