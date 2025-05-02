@@ -16,6 +16,7 @@ mkdir -p /var/www/html
 # Set proper ownership
 echo "Setting proper ownership for /var/www/html..."
 chown -R nginx:nginx /var/www/html
+chmod -R 755 /var/www/html
 
 # Enable nginx to start on boot
 echo "Enabling nginx service to start on boot..."
