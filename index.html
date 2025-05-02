@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CodeDeploy - Automated Deployment Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fab fa-aws"></i> AWS CodeDeploy
+            </div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#deployment-types">Deployment Types</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="overview">
+            <div class="container">
+                <h1>AWS CodeDeploy</h1>
+                <h2>Automate your deployments. Minimize downtime. Scale with confidence.</h2>
+                <p class="tagline">A fully managed deployment service that automates software deployments to a variety of compute services</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn primary">Explore Features</a>
+                    <a href="#use-cases" class="btn secondary">View Use Cases</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Automated Deployments</h3>
+                        <p>Automate software deployments, eliminating the need for error-prone manual operations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Centralized Control</h3>
+                        <p>Deploy and track your application revisions from a central location.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Minimize Downtime</h3>
+                        <p>Deploy applications with minimal or zero downtime using various deployment options.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Easy Scaling</h3>
+                        <p>Easily scale to thousands of instances across multiple environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use-cases" id="use-cases">
+            <div class="container">
+                <h2>Use Cases</h2>
+                <div class="use-case-container">
+                    <div class="use-case">
+                        <div class="use-case-content">
+                            <h3>Continuous Deployment</h3>
+                            <p>Integrate with CI/CD pipelines to automatically deploy code changes after successful builds and tests.</p>
+                            <ul>
+                                <li>Automate the entire release process</li>
+                                <li>Reduce human error in deployments</li>
+                                <li>Increase deployment frequency</li>
+                            </ul>
+                        </div>
+                        <div class="use-case-image continuous-deployment"></div>
+                    </div>
+                    
+                    <div class="use-case reverse">
+                        <div class="use-case-image blue-green"></div>
+                        <div class="use-case-content">
+                            <h3>Blue/Green Deployments</h3>
+                            <p>Deploy new versions alongside the old version and switch traffic when ready.</p>
+                            <ul>
+                                <li>Eliminate downtime during deployments</li>
+                                <li>Easy rollback if issues are detected</li>
+                                <li>Test in production-like environment before switching</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="use-case">
+                        <div class="use-case-content">
+                            <h3>Multi-Environment Deployments</h3>
+                            <p>Manage deployments across development, testing, and production environments.</p>
+                            <ul>
+                                <li>Consistent deployment process across environments</li>
+                                <li>Environment-specific configurations</li>
+                                <li>Promote code through environments with confidence</li>
+                            </ul>
+                        </div>
+                        <div class="use-case-image multi-env"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deployment-types" id="deployment-types">
+            <div class="container">
+                <h2>Deployment Types</h2>
+                <div class="deployment-grid">
+                    <div class="deployment-card">
+                        <h3>In-place Deployment</h3>
+                        <div class="deployment-animation in-place">
+                            <div class="server-rack">
+                                <div class="server"></div>
+                                <div class="server"></div>
+                                <div class="server"></div>
+                            </div>
+                            <div class="deployment-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <p>Applications are stopped, updated, and restarted on the same set of instances.</p>
+                    </div>
+                    <div class="deployment-card">
+                        <h3>Blue/Green Deployment</h3>
+                        <div class="deployment-animation blue-green">
+                            <div class="server-rack blue">
+                                <div class="server"></div>
+                                <div class="server"></div>
+                            </div>
+                            <div class="deployment-switch">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="server-rack green">
+                                <div class="server"></div>
+                                <div class="server"></div>
+                            </div>
+                        </div>
+                        <p>New instances are provisioned and the new application version is installed. Traffic is shifted when ready.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-aws"></i> AWS CodeDeploy
+                </div>
+                <div class="footer-links">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="https://aws.amazon.com/codedeploy/" target="_blank">Official Documentation</a></li>
+                        <li><a href="https://aws.amazon.com/devops/" target="_blank">AWS DevOps</a></li>
+                        <li><a href="https://aws.amazon.com/getting-started/" target="_blank">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Demo Website for AWS CodeDeploy. This is a demo site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
